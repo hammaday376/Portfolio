@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quickbite – Food Delivery App | UI/UX Case Study</title>
+
+  <!-- Reuse your existing stylesheet -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Page-scoped styles (safe to keep here) -->
+  <style>
+    /* Layout */
+    .case-wrapper { padding: 4rem 10%; max-width: 1200px; margin: 0 auto; color: #dce6ff; }
+
+    /* Back link */
+    .back-link { display: inline-flex; gap: .5rem; align-items: center; text-decoration: none; border: 1px solid #6a0dad55; padding: .5rem .9rem; border-radius: 999px; font-size: .95rem; }
+    .back-link:hover { background: #6a0dad22; }
+
+    /* Hero */
+    .case-hero { margin: 1.5rem 0 2rem; }
+    .case-title { font-size: clamp(2rem, 4vw, 2.75rem); margin-bottom: .5rem; }
+    .case-sub { opacity: .9; font-size: 1.05rem; }
+
+    /* Meta */
+    .meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: .8rem; margin: 1.5rem 0 2.25rem; }
+    .meta-card { background: #0a1a40; border: 1px solid #22346a; border-radius: 16px; padding: 1rem 1.1rem; }
+    .meta-card h4 { margin-bottom: .4rem; color: #a78bfa; font-weight: 600; }
+
+    /* Sections */
+    .case-section { margin: 2.25rem 0; }
+    .case-section h2 { font-size: 1.6rem; margin-bottom: .8rem; color: #6a0dad; }
+    .case-section p { opacity: .95; }
+
+    /* Media blocks */
+    .media { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-top: 1rem; }
+    .media img { width: 100%; height: auto; border-radius: 14px; box-shadow: 0 6px 18px rgba(0,0,0,.35); border: 1px solid #22346a; }
+
+    /* Prototype button */
+    .btn-outline, .btn-primary { display: inline-block; text-decoration: none; padding: .75rem 1.1rem; border-radius: 999px; border: 1px solid #6a0dad; }
+    .btn-primary { background: #6a0dad; border-color: #6a0dad; color: #fff; }
+    .btn-primary:hover { filter: brightness(1.08); }
+
+    /* Footer nav */
+    .case-nav { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2.5rem; }
+    .muted { opacity: .7; font-size: .95rem; }
+  </style>
+</head>
+<body>
+
+  <main class="case-wrapper">
+    <!-- Hero -->
+    <header class="case-hero">
+      <h1 class="case-title">Quickbite – Food Delivery App</h1>
+      <p class="case-sub">UI/UX design of a food delivery app, covering design system, wireframes, final UI, and interactive prototypes in Figma.</p>
+    </header>
+
+    <!-- Meta -->
+    <section class="meta">
+      <div class="meta-card">
+       <br> <h4>Role</h4>
+        <p>Product Designer (UI/UX)</p>
+      </div>
+      <div class="meta-card">
+       <br> <h4>Timeline</h4>
+        <p>2–3 weeks (solo)</p>
+      </div>
+      <div class="meta-card">
+       <br> <h4>Tools</h4>
+        <p>Figma, FigJam</p>
+      </div>
+      <div class="meta-card">
+        <h4>Deliverables</h4>
+        <p>Design System, Wireframes, Hi-Fi UI, Prototype</p>
+      </div>
+    </section>
+
+    <!-- Description -->
+    <section class="case-section">
+      <h2> Project Description</h2>
+      <p>
+        Quickbite streamlines food discovery and ordering with a clean flow: browse → select → checkout → Pay.
+        This case study highlights my process and decisions from early structure to polished UI.
+      </p>
+    </section>
+
+    <!-- Design System -->
+    <section class="case-section">
+      <h2> Design System</h2>
+      <p class="muted">Colors, typography, spacing, buttons, inputs, and key components used across the app.</p>
+      <div class="media">
+        <img src="assets/Design system.png" alt="Quickbite Design System"/>
+      </div>
+    </section>
+
+    <!-- Wireframes -->
+    <section class="case-section">
+      <h2> Wireframes</h2>
+      <p class="muted">Early low-fidelity structure for core screens to validate flows quickly.</p>
+      <div class="media">
+        <!-- Replace with your exported Figma assets -->
+        <img src="assets/wireframes.png" alt="Wireframes"/>
+      </div>
+    </section>
+
+    <!-- Final UI -->
+    <section class="case-section">
+      <h2> Final UI Screens</h2>
+      <p class="muted">High-fidelity designs emphasizing clarity, hierarchy, and effortless navigation.</p>
+      <div class="media">
+        <!-- Replace with your exported Figma assets -->
+        <img src="assets/1st.png" alt=" Landing"/>
+        <img src="assets/welcome.png" alt=" Welcome"/>
+        <img src="assets/home.png" alt=" Home"/>
+        <img src="assets/resturant.png" alt=" Restaurant"/>
+        <img src="assets/cart.png" alt=" Cart"/>
+        <img src="assets/checkout.png" alt=" Checkout"/>
+      </div>
+    </section>
+
+    <!-- Prototype -->
+    <section class="case-section">
+      <h2> Interactive Prototype</h2>
+      <p class="muted">Explore the core user flow and micro-interactions.</p><br>
+      <a href="https://www.figma.com/proto/vi0Ort4JM1Rf9wN3PC8gpb/QuickBite-%E2%80%93
+      -Food-Delivery-App?page-id=1%3A4&node-id=43-277&p=f&viewport=228%2C25%2C0.27&t=
+      jrr0LNRKMBejVuUk-1&scaling=scale-down&content-scaling=fixed" target="_blank" 
+      class="btn-outline">View Prototype</a>
+    </section>
+
+    <!-- Footer nav -->
+    <div class="case-nav">
+      <span class="muted">© Hammad Ali</span>
+    </div>
+  </main>
+<div class="case-section" style="text-align: center; margin-top: 3rem;">
+  <a href="index.html" class="btn-outline">← Back to Portfolio</a>
+</div>
+</body>
+</html>
