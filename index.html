@@ -9,18 +9,20 @@
 
 </head>
 <body>
-  <!-- Navbar -->
-  <header class="navbar">
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact" class="btn">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+ <!-- Navbar -->
+<header class="navbar">
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact" class="btn">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+</header>
+
 
   <!-- Hero Section -->
   <section id="home" class="hero">
@@ -174,7 +176,7 @@
     <div class="project-card">
       <img src="assets/EduTrack.png" alt="EduTrack" class="project-image">
       <h3>EduTrack</h3>
-      <p>A responsive tracking app to organize and track your Learning pregress.</p>
+      <p>A responsive tracking app to organize and track your Learning progress.</p>
       <a href="" target="_blank" class="btn-outline">View Project</a>
     </div>
 
@@ -210,6 +212,17 @@
 <footer class="footer">
   <p>© 2025 Hammad Ali . All Rights Reserved.</p>
 </footer>
+<script>
+function toggleMenu() {
+  document.querySelector('.nav-links').classList.toggle('active');
+}
 
+// Auto-close menu on link click
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.remove('active');
+  });
+});
+</script>
 </body>
 </html>

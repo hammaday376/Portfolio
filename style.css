@@ -57,7 +57,50 @@ body {
 .navbar a:hover::after {
   width: 100%;
 }
+/* Hamburger icon (hidden on desktop) */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: #b3c7f9;
+  cursor: pointer;
+}
 
+/* Mobile styles */
+@media (max-width: 768px) {
+  /* Stack navbar instead of centered */
+  .navbar {
+    text-align: left;
+    margin-top: 0;
+    padding: 1rem;
+  }
+
+  /* Hide links by default */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  /* Show when active */
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Show hamburger only on mobile */
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+}
 /* Hero Section */
 .hero {
   height: 100vh;
