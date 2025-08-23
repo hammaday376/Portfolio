@@ -6,23 +6,21 @@
   <title>Hammad-Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
 <body>
- <!-- Navbar -->
-<header class="navbar">
-  <nav>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact" class="btn">Contact</a></li>
-    </ul>
-  </nav>
-  <div class="hamburger" onclick="toggleMenu()">☰</div>
-</header>
 
+  <!-- Navbar -->
+  <header class="navbar hide-on-mobile">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="btn">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
@@ -53,7 +51,6 @@
    <figure class="about-photo">
       <img src="assets/WhatsApp_Image_2025-08-06_at_10.33.25_a1ded12e-removebg-preview.png" alt="Hammad profile">
     </figure>
-  </div>
   </section>
   
 
@@ -61,130 +58,129 @@
   <section id="skills" class="skills">
     <h2>Tech stack / Skills</h2>
     <div class="skills-grid">
+
+      <!-- Skill Cards -->
       <div class="skill-card">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
-  <h1>HTML</h1>
-  <p class="skill-desc">Structure of web pages</p>
-</div>
-
-<div class="skill-card">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
-  <h1>CSS</h1>
-  <p class="skill-desc">Styling and layouts</p>
-</div>
-
-<div class="skill-card">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
-  <h1>JavaScript</h1>
-  <p class="skill-desc">Interactivity and logic</p>
-</div>
-
-<div class="skill-card">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>
-  <h1>React</h1>
-  <p class="skill-desc">Building dynamic UIs</p>
-</div>
-
-<div class="skill-card">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"/>
-  <h1>Next.js</h1>
-  <p class="skill-desc">Server-side rendering & routing</p>
-</div>
-
-<div class="skill-card">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"/>
-  <h1>Node.js</h1>
-  <p class="skill-desc">Backend runtime for JS</p>
-</div>
-
-<div class="skill-card">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/>
-  <h1>Java</h1>
-  <p class="skill-desc">Object-oriented programming</p>
-</div>
-
-<div class="skill-card">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"/>
-  <h1>Figma</h1>
-  <p class="skill-desc">UI/UX design tool</p>
-</div>
-
-<div class="skill-card">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"/>
-  <h1>MongoDB</h1>
-  <p class="skill-desc">NoSQL database</p>
-</div>
-
-<div class="skill-card">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"/>
-  <h1>Flutter</h1>
-  <p class="skill-desc">Cross-platform mobile apps</p>
-</div>
-
-<div class="skill-card">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"/>
-  <h1>Express.js</h1>
-  <p class="skill-desc">Backend framework for Node.js</p>
-</div>
-
-<div class="skill-card">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"/>
-  <h1>TypeScript</h1>
-  <p class="skill-desc">Typed superset of JavaScript</p>
-</div>
-
-<div class="skill-card">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"/>
-  <h1>MySQL</h1>
-  <p class="skill-desc">Relational database</p>
-</div>
-
-<div class="skill-card">
-  <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"/>
-  <h1>Tailwind</h1>
-  <p class="skill-desc">Utility-first CSS framework</p>
-</div>
-
-<div class="skill-card">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"/>
-  <h1>Firebase</h1>
-  <p class="skill-desc">Backend services & hosting</p>
-</div>
-
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
+        <h1>HTML</h1>
+        <p class="skill-desc">Structure of web pages</p>
       </div>
+
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
+        <h1>CSS</h1>
+        <p class="skill-desc">Styling and layouts</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
+        <h1>JavaScript</h1>
+        <p class="skill-desc">Interactivity and logic</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>
+        <h1>React</h1>
+        <p class="skill-desc">Building dynamic UIs</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"/>
+        <h1>Next.js</h1>
+        <p class="skill-desc">Server-side rendering & routing</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"/>
+        <h1>Node.js</h1>
+        <p class="skill-desc">Backend runtime for JS</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/>
+        <h1>Java</h1>
+        <p class="skill-desc">Object-oriented programming</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"/>
+        <h1>Figma</h1>
+        <p class="skill-desc">UI/UX design tool</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"/>
+        <h1>MongoDB</h1>
+        <p class="skill-desc">NoSQL database</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"/>
+        <h1>Flutter</h1>
+        <p class="skill-desc">Cross-platform mobile apps</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"/>
+        <h1>Express.js</h1>
+        <p class="skill-desc">Backend framework for Node.js</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"/>
+        <h1>TypeScript</h1>
+        <p class="skill-desc">Typed superset of JavaScript</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"/>
+        <h1>MySQL</h1>
+        <p class="skill-desc">Relational database</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"/>
+        <h1>Tailwind</h1>
+        <p class="skill-desc">Utility-first CSS framework</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"/>
+        <h1>Firebase</h1>
+        <p class="skill-desc">Backend services & hosting</p>
+      </div>
+
+    </div>
   </section>
 
-<!-- Projects Section -->
-<section id="projects" class="projects">
-  <h2>Projects</h2>
-  <div class="projects-grid">
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
 
-    <div class="project-card">
-      <img src="assets/Convertly2.png" alt="Convertly" class="project-image">
-      <h3>Convertly</h3>
-      <p>An all-in-one conversion tool.<br>A web app with a clean and modern UI.</p>
-      <a href="https://hammaday376.github.io/convertly/" target="_blank" class="btn-outline">View Project</a>
+      <div class="project-card">
+        <img src="assets/Convertly2.png" alt="Convertly" class="project-image">
+        <h3>Convertly</h3>
+        <p>An all-in-one conversion tool.<br>A web app with a clean and modern UI.</p>
+        <a href="https://hammaday376.github.io/convertly/" target="_blank" class="btn-outline">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/Quickbite.png" alt="Quickbite-Food delivery App" class="project-image">
+        <h3>Quickbite</h3>
+        <p>UI/UX design of a food delivery app. (Using Figma)</p>
+        <a href="uiux-project1.html" target="_blank" class="btn-outline">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/EduTrack.png" alt="EduTrack" class="project-image">
+        <h3>EduTrack</h3>
+        <p>A responsive tracking app to organize and track your Learning progress.</p>
+        <a href="" target="_blank" class="btn-outline">View Project</a>
+      </div>
+
     </div>
-
-    <div class="project-card">
-      <img src="assets/Quickbite.png" alt="Quickbite-Food delivery App" class="project-image">
-      <h3>Quickbite</h3>
-      <p>UI/UX design of a food delivery app. (Using Figma)</p>
-      <a href="uiux-project1.html" target="_blank" class="btn-outline">View Project</a>
-    </div>
-
-    <div class="project-card">
-      <img src="assets/EduTrack.png" alt="EduTrack" class="project-image">
-      <h3>EduTrack</h3>
-      <p>A responsive tracking app to organize and track your Learning progress.</p>
-      <a href="" target="_blank" class="btn-outline">View Project</a>
-    </div>
-
-  </div>
-</section>
-
-</section>
-
+  </section>
 
   <!-- Contact Section -->
   <section id="contact" class="contact">
@@ -197,32 +193,22 @@
     </form>
     <a href="resume.pdf" download class="btn-outline">Download Resume</a>
   </section>
+
   <p class="social-text">Get in Touch</p>
   <div class="social-icons">
-  <a href="https://www.instagram.com/oye_hamaadayy/" target="_blank"><i class="fab fa-instagram"></i></a>
-  <a href="https://www.linkedin.com/in/hammad-ali-70b659367/" target="_blank"><i class="fab fa-linkedin"></i></a>
-  <a href="https://x.com/ha2610915" target="_blank"><i class="fab fa-twitter"></i></a>
-  <a href="https://github.com/hammaday376" target="_blank"><i class="fab fa-github"></i></a>
-</div>
-<p class="social-email">
-  <i class="fa-brands fa-google"></i> hammadofficial2k3@gmail.com
-</p>
-</section>
-  <script src="script.js"></script>
-<footer class="footer">
-  <p>© 2025 Hammad Ali . All Rights Reserved.</p>
-</footer>
-<script>
-function toggleMenu() {
-  document.querySelector('.nav-links').classList.toggle('active');
-}
+    <a href="https://www.instagram.com/oye_hamaadayy/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/hammad-ali-70b659367/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://x.com/ha2610915" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://github.com/hammaday376" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+  <p class="social-email">
+    <i class="fa-brands fa-google"></i> hammadofficial2k3@gmail.com
+  </p>
 
-// Auto-close menu on link click
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    document.querySelector('.nav-links').classList.remove('active');
-  });
-});
-</script>
+  <footer class="footer">
+    <p>© 2025 Hammad Ali . All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

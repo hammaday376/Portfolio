@@ -12,25 +12,30 @@ body {
   line-height: 1.6;
   scroll-behavior: smooth;
 }
+/* ---------- Navbar ---------- */
 
-/* Navbar */
+/* Desktop (default) */
 .navbar {
   position: relative;
   width: 100%;
   padding: 1rem 2rem;
   background: transparent;
-  text-align: center;
-  margin-top: 20px; /* push it down a bit */
+  display: flex;
+  justify-content: center;  /* center nav */
+  align-items: center;
+  margin-top: 20px;
+  z-index: 1000;
 }
 
-.navbar ul {
+/* Nav Links (desktop) */
+.navbar .nav-links {
   display: flex;
   justify-content: center;
   list-style: none;
   gap: 2rem;
 }
 
-.navbar a {
+.navbar .nav-links a {
   position: relative;
   text-decoration: none;
   color: #b3c7f9;
@@ -38,8 +43,8 @@ body {
   transition: color 0.3s ease;
 }
 
-/* Navbar hover underline animation */
-.navbar a::after {
+/* Hover underline effect */
+.navbar .nav-links a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -50,57 +55,23 @@ body {
   transition: width 0.3s ease;
 }
 
-.navbar a:hover {
+.navbar .nav-links a:hover {
   color: #6a0dad;
 }
 
-.navbar a:hover::after {
+.navbar .nav-links a:hover::after {
   width: 100%;
 }
-/* Hamburger icon (hidden on desktop) */
-.hamburger {
-  display: none;
-  font-size: 28px;
-  color: #b3c7f9;
-  cursor: pointer;
-}
 
-/* Mobile styles */
+/* ---------- Mobile (override) ---------- */
 @media (max-width: 768px) {
-  /* Stack navbar instead of centered */
   .navbar {
-    text-align: left;
-    margin-top: 0;
-    padding: 1rem;
-  }
-
-  /* Hide links by default */
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: rgba(0, 0, 0, 0.9);
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    gap: 1.5rem;
-    padding: 1.5rem;
-    text-align: center;
-  }
-
-  /* Show when active */
-  .nav-links.active {
-    display: flex;
-  }
-
-  /* Show hamburger only on mobile */
-  .hamburger {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 20px;
+    display: none;   /* hide navbar on mobile */
   }
 }
+
+
+
 /* Hero Section */
 .hero {
   height: 100vh;
@@ -506,6 +477,12 @@ button:hover::after,
 
 .footer p {
   margin: 0;
+}
+/* Hide Navbar Only on Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
 }
 /* === Case Study Page Styles === */
 .case-wrapper { 
