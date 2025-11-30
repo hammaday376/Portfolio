@@ -130,7 +130,7 @@ body {
   margin-right: 340px;
 }
 
-/* Circle pinned on the right, like your screenshot */
+/* Circle pinned on the right,  */
 .about-photo {
   position: absolute;
   top: 3.25rem;
@@ -140,8 +140,7 @@ body {
   border-radius: 50%;
   overflow: hidden;
   display: grid;
-  place-items: center;
-
+  place-items: center
   /* Glow effect */
   box-shadow: 0 0 10px #00aaff,   /* subtle glow */
               0 0 20px #00aaff,
@@ -260,16 +259,23 @@ button:hover::after,
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* bigger cards */
+  gap: 2rem;
 }
 
 .skill-card {
   background: #0a1a40;
-  padding: 1.5rem;
-  border-radius: 12px;
+  padding: 2.2rem;               /* more padding = bigger card */
+  border-radius: 16px;
   text-align: center;
   transition: transform 0.3s;
+  
+  display: flex;                 /* center content */
+  flex-direction: column;
+  justify-content: center;       /* vertical center */
+  align-items: center;           /* horizontal center */
+  gap: 0.7rem;
+  height: 260px;                 /* fixed height for equal size */
 }
 
 .skill-card:hover {
@@ -277,15 +283,21 @@ button:hover::after,
 }
 
 .skill-card img {
-  width: 40px;
+  width: 60px;                   /* bigger icon */
   margin-bottom: 0.5rem;
 }
-.skill-desc {
-  font-size: 0.8rem;   /* smaller size */
-  font-style: italic;  /* italic text */
-  color: #9bb2d6;      /* optional: softer color */
-  margin-top: 0.3rem;  /* little spacing */
+
+.skill-card h3 {
+  font-size: 1.3rem;             /* slightly bigger title */
 }
+
+.skill-desc {
+  font-size: 1rem;               /* slightly bigger description */
+  font-style: italic;
+  color: #9bb2d6;
+  margin-top: 0.3rem;
+}
+
 /* Projects Section */
 .projects {
   padding: 4rem 10%;
